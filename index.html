@@ -13,18 +13,38 @@
         body {
             Margin: 0;
             padding: 0;
+            background-color: #f6f9fc;
         }
-
-        table{
+        table {
             border-spacing: 0;
         }
-
         td {
             padding: 0;
         }
-
         img {
             border:0
+        }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f6f9fc;
+            padding-bottom: 40px;
+        }
+        .webkit {
+            max-width: 600px;
+            background-color: #f6f9fc;
+        }
+        .outer {
+            Margin:0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #888;
+        }
+        .three-columns {
+            text-align: center;
+            font-size: 0; /* Esto es bueno, no importa si tiene o no contenido, hay que ponerle el font 0 */
         }
 
         @media screen and (max-width: 400px){
@@ -48,10 +68,74 @@
         <div class="webkit">
 
             <table class="outer" align="center">
+                <!-- MAIN TABLE =================================================================== -->
+                <tr>
+                    <td>
+                        <table width="600" style="border-spacing:0;">
+                            <!-- LOGO HEADER ===================================================== -->
+                            <tr>
+                                <td style="background-color:#388CDA;padding:10px;text-align:center;">
+                                    <a href="#">
+                                        <img src="./img/w3newbie-white.png" width="180" alt="">
+                                    </a>
+                                    
+                                </td>
+                            </tr>
+                            <!-- BANNER ===================================================== -->
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img src="./img/1200x700.jpg" width="100%" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- MAIN CONTENT/PRODUCTS/SERVICES ============================ -->
+                            <tr>
+                                <td>
+                                    <table width="100%" style="border-spacing:0;">
+                                        <tr>
+                                            <td class="three-columns">
+                                                <!-- COLUMN 1 ======================================= -->
+                                                <table class="column">
+                                                    <tr>
+                                                        <td class="padding">
+                                                            <!-- ======================-->
+                                                            <table class="content">
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#">
+                                                                            <img src="./img/380x280.jpg" width="150" alt="" style="max-width:150px;">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- COLUMN 1 ======================================= -->
 
+
+
+
+
+
+
+
+
+                                                
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- =================================================================== -->
             </table>
-
-
 
         </div>
 
